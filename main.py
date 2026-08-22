@@ -1,5 +1,8 @@
 import json
+import sys
 from collections import deque
+from datetime import datetime
+
 
 def method_risk_assessment(event, stats):
     # метод накопление баллов риска
@@ -25,14 +28,7 @@ def method_risk_assessment(event, stats):
 
 
     delta = 0 # счетчик баллов текущего события
-    details = {
-        "bonus_signed": 0,
-        "penalty_freq": 0,
-        "penalty_susp_ratio": 0,
-        "penalty_entropy_mean": 0,
-        "penalty_entropy_max": 0,
-        "penalty_bytes": 0
-    }
+    details = {} # для логгирования
 
     # для проверки на место работы процесса
     USER_FOLDERS = {'documents', 'desktop', 'pictures', 'music', 'videos', 'downloads'}
@@ -65,11 +61,14 @@ def method_risk_assessment(event, stats):
 
     # проверка подписи цифровой
     if not signed and not stats["signed"]:
+        details["unsigned_process"] = 20
         delta += 20
     elif not signed:
+        details["unsigned_event"] = 5
         delta += 5
     elif signed and not stats["signed"]:
         delta += 10
+        details["signed_mismatch"] = 10
 
     # --- проверка расширения
     ext = ""
@@ -79,27 +78,32 @@ def method_risk_assessment(event, stats):
         ext = "." + path.split(".")[-1]
     if ext in RANSOMWARE_EXTENSIONS:
         delta += 30
+        details["ransomware_extension"] = 30
 
     # --- проверка на взаимодействие с теневыми копиями
     if op in ("CREATE", "RENAME"):
         target = new_path if op == "RENAME" else path
         if target and ("vssadmin" in target.lower() or "wmic" in target.lower()):
             delta += 40
+            details["shadow_copy_interaction"] = 40
 
     # --- проверка, что событие работает с пользовательским файлом
     is_user = any(folder in path.lower() for folder in USER_FOLDERS)
     is_system = any(folder in path.lower() for folder in SYSTEM_FOLDERS)
     if is_user and not is_system:
         delta += 5
+        details["user_folder"] = 5
 
     # --- проверка на изменение файла целиком
     if op == "WRITE" and size_before is not None and size_before > 0 and bytes_written > 0:
         if bytes_written >= 0.9 * size_before:
             delta += 20
+            details["full_file_overwrite"] = 20
 
     # --- проверка на слишком интенсивную работу с файлами
     if stats["total_events"] > 10000:
         delta += 10
+        details["high_total_events"] = 10
 
     # --- проверка на то, сколько у процесса запросов за секунду, если их кол-во превышает порог, то это шифровальщик
     # окно с событиями происходящими в течение 1 секунды
@@ -116,6 +120,7 @@ def method_risk_assessment(event, stats):
         ratio_susp_operations = suspicious / total
         if ratio_susp_operations >= SUSP_RATIO_THRESHOLD:
             delta += 20
+            details["suspicious_operation_ratio"] = 20
 
     # --- (проверка) анализ энтропии после операций WRITE|RENAME
     entropy_changes = []
@@ -127,15 +132,19 @@ def method_risk_assessment(event, stats):
         max_change = max(entropy_changes)
         if mean_change >= ENTROPY_MEAN_THRESHOLD:
             delta += 40
+            details["entropy_mean_high"] = 40
         elif mean_change >= ENTROPY_MEAN_MODERATE:
             delta += 10
+            details["entropy_mean_moderate"] = 10
         if max_change >= ENTROPY_MAX_THRESHOLD:
             delta += 10
+            details["entropy_max_rise"] = 10
 
     # --- (проверка) подсчет объема записанных данных
     total_bytes = sum(ebytes for _, _, _, _, ebytes in stats["events"] if ebytes)
     if total_bytes >= BYTES_THRESHOLD:
         delta += 10
+        details["high_bytes_volume"] = 10
 
 
     stats["score"] += max(0, min(100, delta))
@@ -161,11 +170,11 @@ def method_risk_assessment(event, stats):
             if stats["first_block"] is None:
                 stats["first_block"] = curr_time
 
-    return avg_risk, verdict, details
+    return details
 
 
 
-processes = []
+processes_by_pid = {}
 
 p, n = map(int, input().split())
 
@@ -175,9 +184,21 @@ p, n = map(int, input().split())
 # • parent_pid — идентификатор родительского процесса или -1;
 # • signed — наличие корректной цифровой подписи у исполняемого файла.
 for i in range(p):
-    processes.append(json.loads(input()))
+    process = json.loads(input())
+    pid, name, parent_pid, signed = process["pid"], process["name"], process["parent_pid"], process["signed"]
+    processes_by_pid[pid] = {
+        "state": "ALLOW",
+        "events": deque(),
+        "signed": False,
+        "score": 0,
+        "total_events": 0,
+        "first_observe": None,
+        "first_block": None
+    }
 
-
+# открытие файла для записи логов
+log_file = open("risk_details.txt", "a", encoding="utf-8")
+log_file.write(f"\n=== NEW RUN at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
 
 # Каждое событие содержит обязательные поля:
 # • time — время события в миллисекундах от начала сценария;
@@ -187,13 +208,12 @@ for i in range(p):
 # • path — путь к файлу внутри виртуальной файловой системы.
 # Событие может содержать дополнительные поля: new_path для переименования, bytes для числа измененных
 # байтов, size_before и size_after, а также entropy_before и entropy_after — условные оценки энтропии от 0 до 1.
-events_by_pid = {}
+
 for i in range(n):
     event = json.loads(input())
     pid =  event["pid"]
-
-    if pid not in events_by_pid:
-        events_by_pid[pid] = {
+    if pid not in processes_by_pid:
+        processes_by_pid[pid] = {
             "state":"ALLOW",
             "events": deque(),
             "signed": False,
@@ -202,10 +222,41 @@ for i in range(n):
             "first_observe": None,
             "first_block": None
         }
-    risk_score, verdict, details = method_risk_assessment(event, events_by_pid[pid])
-    detail_str = ", ".join(f"{k}: {v}" for k, v in details.items() if v != 0)
-    if not detail_str:
-        detail_str = "no penalties or bonuses"
-    print(f"PID {pid} at time {event['time']}: {verdict} (score={risk_score})")
-    print(f"  Details: {detail_str}")
+    details = method_risk_assessment(event, processes_by_pid[pid])
+    # Записываем информацию о событии в лог
+    if details is None:
+        log_file.write(
+            f"Event IGNORED (process already BLOCKED): time={event['time']}, pid={pid}, op={event['op']}\n\n")
+    else:
+        log_file.write(
+            f"Event: time={event['time']}, pid={pid}, op={event['op']}, path={event.get('path', '')}, new_path={event.get('new_path', '')}\n")
+        if details:
+            for rule, score in details.items():
+                log_file.write(f"  - {rule}: +{score}\n")
+        else:
+            log_file.write("  - no penalties or bonuses\n")
+        log_file.write("\n")
 
+log_file.close()
+out_lines = []
+
+for pid in processes_by_pid:
+    stats = processes_by_pid[pid]
+    if stats is None or stats["total_events"] == 0:
+        verdict = "ALLOW"
+        decision_time = -1
+        risk_score = 0
+    else:
+        if stats["state"] == "BLOCK":
+            verdict = "BLOCK"
+            decision_time = stats["first_block"] if stats["first_block"] is not None else -1
+        elif stats["state"] == "OBSERVE":
+            verdict = "OBSERVE"
+            decision_time = stats["first_observe"] if stats["first_observe"] is not None else -1
+        else:
+            verdict = "ALLOW"
+            decision_time = -1
+        risk_score = stats["score"] / stats["total_events"]
+
+    out_lines.append(f"{pid} {verdict} {decision_time} {risk_score}")
+sys.stdout.write("\n".join(out_lines))
