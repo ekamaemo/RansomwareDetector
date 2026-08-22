@@ -6,12 +6,15 @@ def method_risk_assessment(event, stats):
 
     """
         stats – словарь с ключами:
+            'state': текущий статус
             'score': баллы риска процесса
             'events': deque из (time, op, entropy_before, entropy_after, bytes) за последнюю секунду
             'signed': bool (подпись процесса)
             'first_observe': int or None (время первого перехода в OBSERVE)
             'first_block': int or None (время первого перехода в BLOCK)
     """
+    if stats["state"] == "BLOCK":
+        return
 
     # Настройки порогов (на тестировании надо менять, чтобы подобрать лучшие баллы - высшая точность нахождения шифровальщика)
     SUSP_RATIO_THRESHOLD = 0.6  # доля WRITE/RENAME/DELETE – штраф
@@ -139,16 +142,24 @@ def method_risk_assessment(event, stats):
     stats["total_events"] += 1
     avg_risk = stats["score"] / stats["total_events"]
     if avg_risk <= 30:
-        verdict = "ALLOW"
+        new_verdict = "ALLOW"
     elif avg_risk <= 60:
-        verdict = "OBSERVE"
+        new_verdict = "OBSERVE"
     else:
-        verdict = "BLOCK"
+        new_verdict = "BLOCK"
 
-    if verdict == "OBSERVE" and stats["first_observe"] is None:
-        stats["first_observe"] = curr_time
-    elif verdict == "BLOCK" and stats["first_block"] is None:
-        stats["first_block"] = curr_time
+    if stats["state"] == "ALLOW":
+        if new_verdict != "ALLOW":
+            stats["state"] = new_verdict
+            if new_verdict == "OBSERVE" and stats["first_observe"] is None:
+                stats["first_observe"] = curr_time
+            elif new_verdict == "BLOCK" and stats["first_block"] is None:
+                stats["first_block"] = curr_time
+    elif stats["state"] == "OBSERVE":
+        if new_verdict == "BLOCK":
+            stats["state"] = "BLOCK"
+            if stats["first_block"] is None:
+                stats["first_block"] = curr_time
 
     return avg_risk, verdict, details
 
@@ -183,6 +194,7 @@ for i in range(n):
 
     if pid not in events_by_pid:
         events_by_pid[pid] = {
+            "state":"ALLOW",
             "events": deque(),
             "signed": False,
             "score": 0,
