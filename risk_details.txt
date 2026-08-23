@@ -1,0 +1,449 @@
+
+=== NEW RUN at 2026-08-23 11:24:37 ===
+Event: time=1000, pid=4, op=CREATE, path=docs/temp.txt, new_path=
+  - signed_mismatch: +10
+
+Event: time=1100, pid=4, op=WRITE, path=docs/temp.txt, new_path=
+  - signed_mismatch: +10
+
+Event: time=1200, pid=17, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1203, pid=17, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1218, pid=17, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+Event IGNORED (process already BLOCKED): time=1300, pid=17, op=READ
+
+Event IGNORED (process already BLOCKED): time=1305, pid=17, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1320, pid=17, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1400, pid=17, op=READ
+
+Event IGNORED (process already BLOCKED): time=1405, pid=17, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1410, pid=17, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1500, pid=17, op=DELETE
+
+
+=== NEW RUN at 2026-08-23 11:25:14 ===
+Event: time=100, pid=10, op=CREATE, path=docs/new.txt, new_path=
+  - signed_mismatch: +10
+
+Event: time=120, pid=100, op=WRITE, path=docs/new.txt, new_path=
+  - signed_mismatch: +10
+  - suspicious_operation_ratio: +20
+  - entropy_mean_moderate: +10
+
+Event: time=200, pid=100, op=RENAME, path=docs/new.txt, new_path=docs/notes.txt
+  - signed_mismatch: +10
+  - suspicious_operation_ratio: +20
+  - entropy_mean_moderate: +10
+
+Event: time=300, pid=100, op=READ, path=docs/notes.txt, new_path=
+  - signed_mismatch: +10
+  - suspicious_operation_ratio: +20
+  - entropy_mean_moderate: +10
+
+Event: time=400, pid=100, op=WRITE, path=docs/notes.txt, new_path=
+  - signed_mismatch: +10
+  - full_file_overwrite: +20
+  - suspicious_operation_ratio: +20
+  - entropy_mean_moderate: +10
+
+Event: time=500, pid=10, op=CREATE, path=temp/tmp1.tmp, new_path=
+  - signed_mismatch: +10
+
+Event: time=600, pid=10, op=DELETE, path=temp/tmp1.tmp, new_path=
+  - signed_mismatch: +10
+
+Event: time=700, pid=100, op=READ, path=docs/notes.txt, new_path=
+  - signed_mismatch: +10
+  - suspicious_operation_ratio: +20
+  - entropy_mean_moderate: +10
+
+
+=== NEW RUN at 2026-08-23 11:53:13 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+Event: time=1100, pid=21, op=READ, path=docs/file2.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1110, pid=21, op=WRITE, path=docs/file2.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1200, pid=22, op=READ, path=docs/file3.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1210, pid=22, op=WRITE, path=docs/file3.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1300, pid=23, op=READ, path=docs/file4.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1310, pid=23, op=WRITE, path=docs/file4.docx, new_path=
+  - unsigned_process: +20
+
+
+=== NEW RUN at 2026-08-23 11:57:09 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:00:06 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:01:43 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:07:26 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:09:20 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:11:28 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:11:43 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+
+=== NEW RUN at 2026-08-23 12:12:28 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+
+=== NEW RUN at 2026-08-23 12:46:33 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:48:45 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:51:32 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:51:53 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
+
+=== NEW RUN at 2026-08-23 12:52:13 ===
+Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+
+Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
+  - unsigned_process: +20
+  - entropy_mean_high: +40
+
+Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
+  - unsigned_process: +20
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+
+  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
+  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
+Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+
+Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+
+Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+
+Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+
