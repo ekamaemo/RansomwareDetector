@@ -35,7 +35,8 @@ def analyze(path_to_data=None):
                 "total_events": 0,
                 "first_observe": None,
                 "first_block": None,
-                "parent_pid": parent_pid
+                "parent_pid": parent_pid,
+                "changed_files": set()
             }
 
         # открытие файла для записи логов
@@ -94,10 +95,11 @@ def analyze(path_to_data=None):
                 verdict = "ALLOW"
                 decision_time = -1
 
-            risk_score = stats["score"] / stats["total_events"] if stats["total_events"] > 0 else 100
+            risk_score = stats["score"] / stats["total_events"] if stats["total_events"] > 0 else 0
 
             out_lines.append(f"{pid} {verdict} {decision_time} {risk_score}")
         sys.stdout.write("\n".join(out_lines))
+        return processes_by_pid
 
 
 
@@ -183,6 +185,10 @@ def method_risk_assessment(event, stats):
     size_before = event.get("size_before")
     size_after = event.get("size_after")
 
+    # для отслеживания измененных файлов
+    if op == "WRITE" and path:
+        stats["changed_files"].add(path)
+
     # проверка подписи цифровой
     if not signed and not stats["signed"]:
         details["unsigned_process"] = 20
@@ -242,7 +248,7 @@ def method_risk_assessment(event, stats):
     if total > 0:
         suspicious = sum(1 for _, o, _, _, _ in stats["events"] if o in ("WRITE", "RENAME", "DELETE"))
         ratio_susp_operations = suspicious / total
-        if ratio_susp_operations >= SUSP_RATIO_THRESHOLD:
+        if ratio_susp_operations >= SUSP_RATIO_THRESHOLD and total > 2:
             delta += 20
             details["suspicious_operation_ratio"] = 20
 

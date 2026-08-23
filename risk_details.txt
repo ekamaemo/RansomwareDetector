@@ -1,449 +1,2304 @@
 
-=== NEW RUN at 2026-08-23 11:24:37 ===
-Event: time=1000, pid=4, op=CREATE, path=docs/temp.txt, new_path=
-  - signed_mismatch: +10
+=== NEW RUN at 2026-08-23 21:36:44 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
 
-Event: time=1100, pid=4, op=WRITE, path=docs/temp.txt, new_path=
-  - signed_mismatch: +10
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
 
-Event: time=1200, pid=17, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
 
-Event: time=1203, pid=17, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-Event: time=1218, pid=17, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
-  - suspicious_operation_ratio: +20
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event IGNORED (process already BLOCKED): time=1300, pid=17, op=READ
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1305, pid=17, op=WRITE
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1320, pid=17, op=RENAME
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
 
-Event IGNORED (process already BLOCKED): time=1400, pid=17, op=READ
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1405, pid=17, op=WRITE
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1410, pid=17, op=RENAME
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
 
-Event IGNORED (process already BLOCKED): time=1500, pid=17, op=DELETE
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
 
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-=== NEW RUN at 2026-08-23 11:25:14 ===
-Event: time=100, pid=10, op=CREATE, path=docs/new.txt, new_path=
-  - signed_mismatch: +10
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event: time=120, pid=100, op=WRITE, path=docs/new.txt, new_path=
-  - signed_mismatch: +10
-  - suspicious_operation_ratio: +20
-  - entropy_mean_moderate: +10
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
 
-Event: time=200, pid=100, op=RENAME, path=docs/new.txt, new_path=docs/notes.txt
-  - signed_mismatch: +10
-  - suspicious_operation_ratio: +20
-  - entropy_mean_moderate: +10
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event: time=300, pid=100, op=READ, path=docs/notes.txt, new_path=
-  - signed_mismatch: +10
-  - suspicious_operation_ratio: +20
-  - entropy_mean_moderate: +10
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
 
-Event: time=400, pid=100, op=WRITE, path=docs/notes.txt, new_path=
-  - signed_mismatch: +10
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
   - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_moderate: +10
 
-Event: time=500, pid=10, op=CREATE, path=temp/tmp1.tmp, new_path=
-  - signed_mismatch: +10
-
-Event: time=600, pid=10, op=DELETE, path=temp/tmp1.tmp, new_path=
-  - signed_mismatch: +10
-
-Event: time=700, pid=100, op=READ, path=docs/notes.txt, new_path=
-  - signed_mismatch: +10
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_moderate: +10
 
-
-=== NEW RUN at 2026-08-23 11:53:13 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-Event: time=1100, pid=21, op=READ, path=docs/file2.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1110, pid=21, op=WRITE, path=docs/file2.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1200, pid=22, op=READ, path=docs/file3.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1210, pid=22, op=WRITE, path=docs/file3.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1300, pid=23, op=READ, path=docs/file4.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1310, pid=23, op=WRITE, path=docs/file4.docx, new_path=
-  - unsigned_process: +20
-
-
-=== NEW RUN at 2026-08-23 11:57:09 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 22:48:44 ===
+
+=== NEW RUN at 2026-08-23 22:49:09 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:00:06 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:01:43 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:07:26 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:09:20 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 22:49:48 ===
+
+=== NEW RUN at 2026-08-23 22:50:40 ===
+
+=== NEW RUN at 2026-08-23 22:51:50 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:11:28 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:11:43 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-
-=== NEW RUN at 2026-08-23 12:12:28 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-
-=== NEW RUN at 2026-08-23 12:46:33 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:48:45 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:51:32 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 22:52:07 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:51:53 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
-  - entropy_mean_high: +40
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
-
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
-
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
-
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
-
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
-
-
-=== NEW RUN at 2026-08-23 12:52:13 ===
-Event: time=1000, pid=20, op=READ, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-
-Event: time=1010, pid=20, op=WRITE, path=docs/report.docx, new_path=
-  - unsigned_process: +20
-  - entropy_mean_high: +40
-
-Event: time=1020, pid=20, op=RENAME, path=docs/report.docx, new_path=docs/report.docx.locked
-  - unsigned_process: +20
-  - ransomware_extension: +30
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
+
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 22:53:40 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
   - entropy_mean_high: +40
+  - entropy_max_rise: +10
 
-  >> Descendant process 21 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 22 blocked (parent 20 blocked at time 1020)
-  >> Descendant process 23 blocked (parent 20 blocked at time 1020)
-Event IGNORED (process already BLOCKED): time=1100, pid=21, op=READ
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1110, pid=21, op=WRITE
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1200, pid=22, op=READ
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
 
-Event IGNORED (process already BLOCKED): time=1210, pid=22, op=WRITE
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1300, pid=23, op=READ
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
 
-Event IGNORED (process already BLOCKED): time=1310, pid=23, op=WRITE
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 23:04:52 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
 
