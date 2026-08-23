@@ -3,6 +3,28 @@ import sys
 from collections import deque
 from datetime import datetime
 
+def block_descendants(pid, current_time, processes_by_pid, log_file):
+    """Блокирует все процессы, являющиеся потомками pid (включая вложенных)."""
+    stack = [pid]
+    visited = set()
+    visited.add(pid)
+
+    while stack:
+        current_pid = stack.pop()
+
+        for child_pid, child_stats in processes_by_pid.items():
+            if child_stats.get("parent_pid") == current_pid and child_pid not in visited:
+                if child_stats["state"] != "BLOCK":
+                    child_stats["state"] = "BLOCK"
+                    if child_stats["first_block"] is None:
+                        child_stats["first_block"] = current_time
+                    log_file.write(
+                        f"  >> Descendant process {child_pid} blocked "
+                        f"(parent {current_pid} blocked at time {current_time})\n"
+                    )
+                visited.add(child_pid)
+                stack.append(child_pid)
+
 
 def method_risk_assessment(event, stats):
     # метод накопление баллов риска
@@ -15,7 +37,9 @@ def method_risk_assessment(event, stats):
             'signed': bool (подпись процесса)
             'first_observe': int or None (время первого перехода в OBSERVE)
             'first_block': int or None (время первого перехода в BLOCK)
+            'parent_pid': айди родителя-процесса
     """
+
     if stats["state"] == "BLOCK":
         return
 
@@ -25,6 +49,8 @@ def method_risk_assessment(event, stats):
     ENTROPY_MEAN_MODERATE = 0.2  # умеренный средний рост – меньший штраф
     ENTROPY_MAX_THRESHOLD = 0.6  # максимальный скачок энтропии – доп. штраф
     BYTES_THRESHOLD = 10 * 1024 * 1024  # 10 МБ за секунду – штраф
+    HIGH_EVENT_RISK = 75
+    MODERATE_EVENT_RISK = 45
 
 
     delta = 0 # счетчик баллов текущего события
@@ -157,6 +183,11 @@ def method_risk_assessment(event, stats):
     else:
         new_verdict = "BLOCK"
 
+    if delta >= HIGH_EVENT_RISK:
+        new_verdict = "BLOCK"
+    elif delta >= MODERATE_EVENT_RISK and new_verdict == "ALLOW":
+        new_verdict = "OBSERVE"
+
     if stats["state"] == "ALLOW":
         if new_verdict != "ALLOW":
             stats["state"] = new_verdict
@@ -189,11 +220,12 @@ for i in range(p):
     processes_by_pid[pid] = {
         "state": "ALLOW",
         "events": deque(),
-        "signed": False,
+        "signed": signed,
         "score": 0,
         "total_events": 0,
         "first_observe": None,
-        "first_block": None
+        "first_block": None,
+        "parent_pid": parent_pid
     }
 
 # открытие файла для записи логов
@@ -213,15 +245,7 @@ for i in range(n):
     event = json.loads(input())
     pid =  event["pid"]
     if pid not in processes_by_pid:
-        processes_by_pid[pid] = {
-            "state":"ALLOW",
-            "events": deque(),
-            "signed": False,
-            "score": 0,
-            "total_events": 0,
-            "first_observe": None,
-            "first_block": None
-        }
+        continue
     details = method_risk_assessment(event, processes_by_pid[pid])
     # Записываем информацию о событии в лог
     if details is None:
@@ -237,26 +261,27 @@ for i in range(n):
             log_file.write("  - no penalties or bonuses\n")
         log_file.write("\n")
 
+        # Если процесс только что стал BLOCK, блокируем всех его потомков
+    if details is not None and processes_by_pid[pid]["state"] == "BLOCK" and \
+            processes_by_pid[pid]["first_block"] == event["time"]:
+        block_descendants(pid, event["time"], processes_by_pid, log_file)
+
 log_file.close()
 out_lines = []
 
 for pid in processes_by_pid:
     stats = processes_by_pid[pid]
-    if stats is None or stats["total_events"] == 0:
+    if stats["state"] == "BLOCK":
+        verdict = "BLOCK"
+        decision_time = stats["first_block"] if stats["first_block"] is not None else -1
+    elif stats["state"] == "OBSERVE":
+        verdict = "OBSERVE"
+        decision_time = stats["first_observe"] if stats["first_observe"] is not None else -1
+    else:
         verdict = "ALLOW"
         decision_time = -1
-        risk_score = 0
-    else:
-        if stats["state"] == "BLOCK":
-            verdict = "BLOCK"
-            decision_time = stats["first_block"] if stats["first_block"] is not None else -1
-        elif stats["state"] == "OBSERVE":
-            verdict = "OBSERVE"
-            decision_time = stats["first_observe"] if stats["first_observe"] is not None else -1
-        else:
-            verdict = "ALLOW"
-            decision_time = -1
-        risk_score = stats["score"] / stats["total_events"]
+
+    risk_score = stats["score"] / stats["total_events"] if stats["total_events"] > 0 else 100
 
     out_lines.append(f"{pid} {verdict} {decision_time} {risk_score}")
 sys.stdout.write("\n".join(out_lines))
