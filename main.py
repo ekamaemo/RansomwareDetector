@@ -209,6 +209,9 @@ def method_risk_assessment(event, stats):
     if ext in RANSOMWARE_EXTENSIONS:
         delta += 30
         details["ransomware_extension"] = 30
+    elif ext not in SAFE_EXTENSIONS:
+        delta += 10
+        details["safe_extension"] = 10
 
     # --- проверка на взаимодействие с теневыми копиями
     if op in ("CREATE", "RENAME"):

@@ -2302,3 +2302,3305 @@ Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg
 Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
   - suspicious_operation_ratio: +20
 
+
+=== NEW RUN at 2026-08-23 23:20:35 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-23 23:20:40 ===
+Event: time=1000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=1500, pid=4, op=READ, path=/system/configs/explorer.ini, new_path=
+  - no penalties or bonuses
+
+Event: time=2000, pid=100, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=2500, pid=200, op=CREATE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=3000, pid=700, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=3500, pid=800, op=READ, path=/photos/originals/DSC_001.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=4000, pid=300, op=WRITE, path=/photos/metadata/DSC_001_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=4500, pid=100, op=READ, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=5000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=5500, pid=500, op=WRITE, path=/photos/edited/DSC_001_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=6000, pid=100, op=RENAME, path=/photos/edited/DSC_001_edited.jpg, new_path=/photos/export/DSC_001_final.jpg
+  - no penalties or bonuses
+
+Event: time=6500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=7000, pid=100, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=7500, pid=200, op=CREATE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=8000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=8500, pid=700, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9000, pid=800, op=READ, path=/photos/originals/DSC_002.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=9500, pid=300, op=WRITE, path=/photos/metadata/DSC_002_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=10000, pid=100, op=READ, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=10500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=11000, pid=500, op=WRITE, path=/photos/edited/DSC_002_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=11500, pid=100, op=RENAME, path=/photos/edited/DSC_002_edited.jpg, new_path=/photos/export/DSC_002_final.jpg
+  - no penalties or bonuses
+
+Event: time=12000, pid=1500, op=CREATE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=12500, pid=100, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=13000, pid=200, op=CREATE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=13500, pid=1600, op=READ, path=/system/chrome/cache/data_0, new_path=
+  - no penalties or bonuses
+
+Event: time=14000, pid=700, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=14500, pid=800, op=READ, path=/photos/originals/DSC_003.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=15000, pid=300, op=WRITE, path=/photos/metadata/DSC_003_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=15500, pid=100, op=READ, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=16000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=16500, pid=500, op=WRITE, path=/photos/edited/DSC_003_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=17000, pid=100, op=RENAME, path=/photos/edited/DSC_003_edited.jpg, new_path=/photos/export/DSC_003_final.jpg
+  - no penalties or bonuses
+
+Event: time=17500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=18000, pid=100, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=18500, pid=200, op=CREATE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=19000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=19500, pid=700, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20000, pid=800, op=READ, path=/photos/originals/DSC_004.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=20500, pid=300, op=WRITE, path=/photos/metadata/DSC_004_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=21000, pid=100, op=READ, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=21500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=22000, pid=500, op=WRITE, path=/photos/edited/DSC_004_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=22500, pid=100, op=RENAME, path=/photos/edited/DSC_004_edited.jpg, new_path=/photos/export/DSC_004_final.jpg
+  - no penalties or bonuses
+
+Event: time=23000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=23500, pid=100, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=24000, pid=200, op=CREATE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=24500, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=25000, pid=700, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=25500, pid=800, op=READ, path=/photos/originals/DSC_005.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=26000, pid=300, op=WRITE, path=/photos/metadata/DSC_005_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=26500, pid=100, op=READ, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=27000, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=27500, pid=500, op=WRITE, path=/photos/edited/DSC_005_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=28000, pid=100, op=RENAME, path=/photos/edited/DSC_005_edited.jpg, new_path=/photos/export/DSC_005_final.jpg
+  - no penalties or bonuses
+
+Event: time=28500, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - full_file_overwrite: +20
+
+Event: time=29000, pid=100, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=29500, pid=200, op=CREATE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=30000, pid=1600, op=READ, path=/system/chrome/cache/data_1, new_path=
+  - no penalties or bonuses
+
+Event: time=30500, pid=700, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31000, pid=800, op=READ, path=/photos/originals/DSC_006.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=31500, pid=300, op=WRITE, path=/photos/metadata/DSC_006_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=32000, pid=100, op=READ, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=32500, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=33000, pid=500, op=WRITE, path=/photos/edited/DSC_006_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=33500, pid=100, op=RENAME, path=/photos/edited/DSC_006_edited.jpg, new_path=/photos/export/DSC_006_final.jpg
+  - no penalties or bonuses
+
+Event: time=34000, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=34500, pid=100, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=35000, pid=200, op=CREATE, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=35500, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=36000, pid=700, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=36500, pid=800, op=READ, path=/photos/originals/DSC_007.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=37000, pid=300, op=WRITE, path=/photos/metadata/DSC_007_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=37500, pid=100, op=READ, path=/photos/previews/DSC_007_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=38000, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=38500, pid=500, op=WRITE, path=/photos/edited/DSC_007_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=39000, pid=100, op=RENAME, path=/photos/edited/DSC_007_edited.jpg, new_path=/photos/export/DSC_007_final.jpg
+  - no penalties or bonuses
+
+Event: time=39500, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=40000, pid=100, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=40500, pid=200, op=CREATE, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=41000, pid=1300, op=WRITE, path=/system/dllhost/state.cache, new_path=
+  - no penalties or bonuses
+
+Event: time=41500, pid=700, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42000, pid=800, op=READ, path=/photos/originals/DSC_008.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=42500, pid=300, op=WRITE, path=/photos/metadata/DSC_008_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=43000, pid=100, op=READ, path=/photos/previews/DSC_008_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=43500, pid=1400, op=READ, path=/system/taskmgr/data.tmp, new_path=
+  - no penalties or bonuses
+
+Event: time=44000, pid=500, op=WRITE, path=/photos/edited/DSC_008_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=44500, pid=100, op=RENAME, path=/photos/edited/DSC_008_edited.jpg, new_path=/photos/export/DSC_008_final.jpg
+  - no penalties or bonuses
+
+Event: time=45000, pid=1500, op=WRITE, path=/users/notepad/note.txt, new_path=
+  - no penalties or bonuses
+
+Event: time=45500, pid=100, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=46000, pid=200, op=CREATE, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=46500, pid=1600, op=READ, path=/system/chrome/cache/data_2, new_path=
+  - no penalties or bonuses
+
+Event: time=47000, pid=700, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=47500, pid=800, op=READ, path=/photos/originals/DSC_009.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=48000, pid=300, op=WRITE, path=/photos/metadata/DSC_009_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=48500, pid=100, op=READ, path=/photos/previews/DSC_009_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=49000, pid=600, op=WRITE, path=/photos/cloud/sync.dat, new_path=
+  - no penalties or bonuses
+
+Event: time=49500, pid=500, op=WRITE, path=/photos/edited/DSC_009_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=50000, pid=100, op=RENAME, path=/photos/edited/DSC_009_edited.jpg, new_path=/photos/export/DSC_009_final.jpg
+  - no penalties or bonuses
+
+Event: time=50500, pid=1700, op=READ, path=/scripts/script.ps1, new_path=
+  - no penalties or bonuses
+
+Event: time=51000, pid=100, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=51500, pid=200, op=CREATE, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=52000, pid=1800, op=WRITE, path=/system/conhost/output.log, new_path=
+  - no penalties or bonuses
+
+Event: time=52500, pid=700, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53000, pid=800, op=READ, path=/photos/originals/DSC_010.raw, new_path=
+  - high_bytes_volume: +10
+
+Event: time=53500, pid=300, op=WRITE, path=/photos/metadata/DSC_010_meta.json, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=54000, pid=100, op=READ, path=/photos/previews/DSC_010_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=54500, pid=900, op=WRITE, path=/system/logs/app.log, new_path=
+  - no penalties or bonuses
+
+Event: time=55000, pid=500, op=WRITE, path=/photos/edited/DSC_010_edited.jpg, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+  - high_bytes_volume: +10
+
+Event: time=55500, pid=100, op=RENAME, path=/photos/edited/DSC_010_edited.jpg, new_path=/photos/export/DSC_010_final.jpg
+  - no penalties or bonuses
+
+Event: time=56000, pid=1200, op=READ, path=/system/wmi/trace.etl, new_path=
+  - no penalties or bonuses
+
+Event: time=56500, pid=200, op=DELETE, path=/photos/previews/DSC_001_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57000, pid=200, op=DELETE, path=/photos/previews/DSC_002_preview.jpg, new_path=
+  - no penalties or bonuses
+
+Event: time=57500, pid=200, op=DELETE, path=/photos/previews/DSC_003_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58000, pid=200, op=DELETE, path=/photos/previews/DSC_004_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=58500, pid=200, op=DELETE, path=/photos/previews/DSC_005_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+Event: time=59000, pid=200, op=DELETE, path=/photos/previews/DSC_006_preview.jpg, new_path=
+  - suspicious_operation_ratio: +20
+
+
+=== NEW RUN at 2026-08-24 13:39:32 ===
+Event: time=0, pid=1000, op=READ, path=/users/user/docs/doc_001.docx, new_path=
+  - no penalties or bonuses
+
+Event: time=5, pid=1000, op=RENAME, path=/users/user/docs/doc_001.docx, new_path=/users/user/docs/doc_001.locky
+  - ransomware_extension: +30
+
+Event: time=10, pid=1000, op=WRITE, path=/users/user/docs/doc_001.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=25, pid=1000, op=READ, path=/users/user/docs/doc_002.docx, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=30, pid=1000, op=RENAME, path=/users/user/docs/doc_002.docx, new_path=/users/user/docs/doc_002.locky
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=35, pid=1000, op=WRITE, path=/users/user/docs/doc_002.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event IGNORED (process already BLOCKED): time=50, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=55, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=60, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=75, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=80, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=85, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2485, pid=1000, op=WRITE
+
+Event: time=60000, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+Event: time=60100, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60200, pid=4, op=READ, path=/system/config/desktop.ini, new_path=
+  - safe_extension: +10
+  - user_folder: +5
+
+Event: time=60300, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60400, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+
+=== NEW RUN at 2026-08-24 13:40:21 ===
+Event: time=0, pid=1000, op=READ, path=/users/user/docs/doc_001.docx, new_path=
+  - no penalties or bonuses
+
+Event: time=5, pid=1000, op=RENAME, path=/users/user/docs/doc_001.docx, new_path=/users/user/docs/doc_001.locky
+  - ransomware_extension: +30
+
+Event: time=10, pid=1000, op=WRITE, path=/users/user/docs/doc_001.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=25, pid=1000, op=READ, path=/users/user/docs/doc_002.docx, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=30, pid=1000, op=RENAME, path=/users/user/docs/doc_002.docx, new_path=/users/user/docs/doc_002.locky
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=35, pid=1000, op=WRITE, path=/users/user/docs/doc_002.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event IGNORED (process already BLOCKED): time=50, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=55, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=60, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=75, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=80, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=85, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2485, pid=1000, op=WRITE
+
+Event: time=60000, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+Event: time=60100, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60200, pid=4, op=READ, path=/system/config/desktop.ini, new_path=
+  - safe_extension: +10
+  - user_folder: +5
+
+Event: time=60300, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60400, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+
+=== NEW RUN at 2026-08-24 13:40:59 ===
+Event: time=0, pid=1000, op=READ, path=/users/user/docs/doc_001.docx, new_path=
+  - no penalties or bonuses
+
+Event: time=5, pid=1000, op=RENAME, path=/users/user/docs/doc_001.docx, new_path=/users/user/docs/doc_001.locky
+  - ransomware_extension: +30
+
+Event: time=10, pid=1000, op=WRITE, path=/users/user/docs/doc_001.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=25, pid=1000, op=READ, path=/users/user/docs/doc_002.docx, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=30, pid=1000, op=RENAME, path=/users/user/docs/doc_002.docx, new_path=/users/user/docs/doc_002.locky
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=35, pid=1000, op=WRITE, path=/users/user/docs/doc_002.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event IGNORED (process already BLOCKED): time=50, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=55, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=60, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=75, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=80, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=85, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2485, pid=1000, op=WRITE
+
+Event: time=60000, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+Event: time=60100, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60200, pid=4, op=READ, path=/system/config/desktop.ini, new_path=
+  - safe_extension: +10
+  - user_folder: +5
+
+Event: time=60300, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60400, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+
+=== NEW RUN at 2026-08-24 13:42:22 ===
+Event: time=0, pid=1000, op=READ, path=/users/user/docs/doc_001.docx, new_path=
+  - no penalties or bonuses
+
+Event: time=5, pid=1000, op=RENAME, path=/users/user/docs/doc_001.docx, new_path=/users/user/docs/doc_001.locky
+  - ransomware_extension: +30
+
+Event: time=10, pid=1000, op=WRITE, path=/users/user/docs/doc_001.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=25, pid=1000, op=READ, path=/users/user/docs/doc_002.docx, new_path=
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=30, pid=1000, op=RENAME, path=/users/user/docs/doc_002.docx, new_path=/users/user/docs/doc_002.locky
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event: time=35, pid=1000, op=WRITE, path=/users/user/docs/doc_002.locky, new_path=
+  - ransomware_extension: +30
+  - suspicious_operation_ratio: +20
+  - entropy_mean_high: +40
+  - entropy_max_rise: +10
+
+Event IGNORED (process already BLOCKED): time=50, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=55, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=60, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=75, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=80, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=85, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1485, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1500, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1505, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1510, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1525, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1530, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1535, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1550, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1555, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1560, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1575, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1580, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1585, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1600, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1605, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1610, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1625, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1630, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1635, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1650, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1655, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1660, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1675, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1680, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1685, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1700, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1705, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1710, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1725, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1730, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1735, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1750, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1755, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1760, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1775, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1780, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1785, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1800, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1805, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1810, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1825, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1830, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1835, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1850, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1855, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1860, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1875, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1880, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1885, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1900, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1905, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1910, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1925, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1930, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1935, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1950, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1955, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1960, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=1975, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=1980, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=1985, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2000, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2005, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2010, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2025, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2030, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2035, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2050, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2055, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2060, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2075, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2080, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2085, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2100, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2105, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2110, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2125, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2130, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2135, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2150, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2155, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2160, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2175, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2180, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2185, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2200, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2205, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2210, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2225, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2230, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2235, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2250, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2255, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2260, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2275, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2280, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2285, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2300, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2305, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2310, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2325, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2330, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2335, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2350, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2355, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2360, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2375, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2380, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2385, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2400, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2405, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2410, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2425, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2430, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2435, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2450, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2455, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2460, pid=1000, op=WRITE
+
+Event IGNORED (process already BLOCKED): time=2475, pid=1000, op=READ
+
+Event IGNORED (process already BLOCKED): time=2480, pid=1000, op=RENAME
+
+Event IGNORED (process already BLOCKED): time=2485, pid=1000, op=WRITE
+
+Event: time=60000, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+
+Event: time=60100, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60200, pid=4, op=READ, path=/system/config/desktop.ini, new_path=
+  - safe_extension: +10
+  - user_folder: +5
+
+Event: time=60300, pid=900, op=WRITE, path=/system/logs/svchost.log, new_path=
+  - safe_extension: +10
+
+Event: time=60400, pid=4, op=READ, path=/system/config/explorer.ini, new_path=
+  - safe_extension: +10
+

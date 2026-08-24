@@ -1,2 +1,2 @@
 scenario,count_blocked_ransomware,count_blocked_safe,count_allow_ransomware,total_processes,count_changed_files,time_sec,peak_memory_mb
-photoeditor + sp,0,0,0,20,0,0.02422809973359108,0.09224510192871094
+locky,1,0,0,3,2,0.0230460986495018,0.06963062286376953
